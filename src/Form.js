@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 const Form = (props) => {
     const [userInput, setUserInput] = useState("")
-    const [currentWord, setCurrentWord] = useState("")
+    // const [currentWord, setCurrentWord] = useState("")
 
     // handleUserInput() will track the user's typing
     const handleUserInput = (e) => {
@@ -15,7 +15,7 @@ const Form = (props) => {
         <>
         <form onSubmit={(e) => {
             props.handleGetWords(e, userInput)
-            setCurrentWord(userInput)
+            // setCurrentWord(userInput)
             setUserInput('')
             
         }}>
@@ -23,8 +23,8 @@ const Form = (props) => {
             <input type="text" onChange={(e) => { handleUserInput(e) }} value={userInput} />
             <button>Submit</button>
         </form>
-
-        <p>Words that rhyme with {currentWord}</p>
+        
+        {/* <p>Words that rhyme with {currentWord}</p> */}
         </>
     )
 

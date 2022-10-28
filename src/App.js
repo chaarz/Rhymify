@@ -7,6 +7,7 @@ function App() {
 
   const [words, setWords] = useState([])
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [currentWord, setCurrentWord] = useState("")
   
 
   // handleGetWords() will perform the network request
@@ -30,11 +31,12 @@ function App() {
 
         setWords(filteredWords)
         setIsSubmitted(true)
-  
+        setCurrentWord(userInput)
 
       })
-      .catch((error) => {
-        console.error(error)
+      .catch(() => {
+        // console.error(error)
+        alert('Something went wrong - please try again later!')
       })
   }
 
@@ -47,7 +49,7 @@ function App() {
 
         <Form handleGetWords={handleGetWords}/>
 
-        <WordList isSubmitted={isSubmitted} words={words} />
+        <WordList isSubmitted={isSubmitted} words={words} currentWord={currentWord}/>
 
       </div>
     </div>
