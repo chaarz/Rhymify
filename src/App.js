@@ -10,7 +10,7 @@ function App() {
   const [currentWord, setCurrentWord] = useState("")
 
 
-  // handleGetWords() will perform the network request
+  // handleGetWords() will perform the network request:
   const handleGetWords = (e, userInput) => {
     e.preventDefault();
 
