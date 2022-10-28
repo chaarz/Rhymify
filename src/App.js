@@ -50,7 +50,7 @@ function App() {
       </header>
       <div>
         <form>
-          <label></label>
+          <label>Enter a word below to find rhymes!</label>
           <input type="text" onChange={(e) => { handleUserInput(e) }} value={userInput} />
           <button onClick={(e) => { handleGetWords(e) }}>Submit</button>
         </form>
