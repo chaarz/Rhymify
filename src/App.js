@@ -1,16 +1,17 @@
 import './App.css';
 import { useState } from 'react'
 import WordList from './WordList';
-
+import Form from './Form';
 
 function App() {
 
   const [words, setWords] = useState([])
   const [userInput, setUserInput] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [currentWord, setCurrentWord] = useState("")
 
-  // Will perform the network request
-  const handleGetWords = (e) => {
+  // handleGetWords() will perform the network request
+  const handleGetWords = (e, userInput) => {
     e.preventDefault();
 
     const url = new URL("https://api.datamuse.com/words")
@@ -21,7 +22,6 @@ function App() {
     fetch(url)
       .then((res) => { return res.json() })
       .then((data) => {
-        // data from api is likely an array []
 
         const filteredWords = data.map((d) => {
           return {
@@ -31,32 +31,32 @@ function App() {
 
         setWords(filteredWords)
         setIsSubmitted(true)
-        setUserInput('')
+        setCurrentWord(userInput)
+
       })
       .catch((error) => {
         console.error(error)
       })
   }
-  // This will track the users typing
+  // handleUserInput() will track the user's typing
   const handleUserInput = (e) => {
     const input = e.target.value;
     const lowerCaseInput = input.toLowerCase();
     setUserInput(lowerCaseInput);
   }
+
   return (
     <div>
       <header>
         <h1>Rhymify</h1>
       </header>
       <div>
-        <form>
-          <label>Enter a word below to find rhymes!</label>
-          <input type="text" onChange={(e) => { handleUserInput(e) }} value={userInput} />
-          <button onClick={(e) => { handleGetWords(e) }}>Submit</button>
-        </form>
 
-        <WordList isSubmitted={isSubmitted} words={words}/>
+        <Form handleGetWords={handleGetWords}/>
 
+        <p>Words that rhyme with {currentWord}</p>
+
+        <WordList isSubmitted={isSubmitted} words={words} />
 
       </div>
     </div>

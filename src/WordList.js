@@ -12,7 +12,6 @@ const WordList = (props) => {
                             <li key={w.word}>{w.word}</li>
                         )
                     })
-
             }
         </ul>
     )
