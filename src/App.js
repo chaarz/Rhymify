@@ -8,7 +8,7 @@ function App() {
   const [words, setWords] = useState([])
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [currentWord, setCurrentWord] = useState("")
-  
+
 
   // handleGetWords() will perform the network request
   const handleGetWords = (e, userInput) => {
@@ -35,24 +35,28 @@ function App() {
 
       })
       .catch(() => {
-        // console.error(error)
         alert('Something went wrong - please try again later!')
       })
   }
 
   return (
-    <div>
+    <>
       <header>
         <h1>Rhymify</h1>
       </header>
-      <div>
+      <main>
+        <section>
 
-        <Form handleGetWords={handleGetWords}/>
+          <Form handleGetWords={handleGetWords} />
 
-        <WordList isSubmitted={isSubmitted} words={words} currentWord={currentWord}/>
+          <WordList isSubmitted={isSubmitted} words={words} currentWord={currentWord} />
 
-      </div>
-    </div>
+        </section>
+      </main>
+      <footer>
+        <p>Copyright © 2022 <a href="https://junocollege.com/">Juno College</a></p>
+      </footer>
+    </>
   );
 }
 

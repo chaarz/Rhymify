@@ -1,6 +1,6 @@
 const WordList = (props) => {
     const { isSubmitted, words, currentWord } = props
-    console.log(words.length)
+ 
     return (
         <section>
             {
@@ -17,7 +17,7 @@ const WordList = (props) => {
                                 }
                             </ul>
                         </>
-                        : <p>There are no words that match your search. Please enter another word</p>
+                        : <p>There are no words that match your search. Please enter another word!</p>
                     : null
             }
         </section>
