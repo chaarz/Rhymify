@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/sass/styles.css';
 import { useState } from 'react'
 import WordList from './WordList';
 import Form from './Form';
@@ -41,10 +41,10 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className='wrapper'>
         <h1>Rhymify</h1>
       </header>
-      <main>
+      <main className='wrapper'>
         <section>
 
           <Form handleGetWords={handleGetWords} />

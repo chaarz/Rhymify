@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: white
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        width: calc(100%/5 - 2%);
+        margin: 1%;
+    }
+}
