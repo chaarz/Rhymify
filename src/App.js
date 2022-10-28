@@ -6,9 +6,8 @@ import Form from './Form';
 function App() {
 
   const [words, setWords] = useState([])
-  const [userInput, setUserInput] = useState("")
   const [isSubmitted, setIsSubmitted] = useState(false)
-  const [currentWord, setCurrentWord] = useState("")
+  
 
   // handleGetWords() will perform the network request
   const handleGetWords = (e, userInput) => {
@@ -31,18 +30,12 @@ function App() {
 
         setWords(filteredWords)
         setIsSubmitted(true)
-        setCurrentWord(userInput)
+  
 
       })
       .catch((error) => {
         console.error(error)
       })
-  }
-  // handleUserInput() will track the user's typing
-  const handleUserInput = (e) => {
-    const input = e.target.value;
-    const lowerCaseInput = input.toLowerCase();
-    setUserInput(lowerCaseInput);
   }
 
   return (
@@ -53,8 +46,6 @@ function App() {
       <div>
 
         <Form handleGetWords={handleGetWords}/>
-
-        <p>Words that rhyme with {currentWord}</p>
 
         <WordList isSubmitted={isSubmitted} words={words} />
 
