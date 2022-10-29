@@ -42,7 +42,8 @@ function App() {
   return (
     <>
       <header className='wrapper'>
-        <h1>Rhymify</h1>
+        <h1>rhymify</h1>
+        <h2>songwriting made easy</h2>
       </header>
       <main className='wrapper'>
         <section>
