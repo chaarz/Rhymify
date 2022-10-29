@@ -26,6 +26,12 @@ h2{
     color: $accentColour;
 }
 
+h3{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
+    padding-bottom: 1.5rem;
+}
+
 a{
     color: $primaryColour;
 }
@@ -34,5 +40,9 @@ input {
     font-size: $baseFontSize;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 0.9rem;
+}
+
+li, p{
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 

@@ -7,7 +7,7 @@ const WordList = (props) => {
                 isSubmitted === true
                     ? words.length !== 0
                         ? <>
-                            <p>Rhymes for {currentWord} :</p>
+                            <h3>Rhymes for <span className="accent">{currentWord}</span> :</h3>
                             <ul>
                                 {words.map((w) => {
                                     return (

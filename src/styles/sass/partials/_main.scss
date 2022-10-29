@@ -29,9 +29,15 @@ form{
 ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     li{
-        width: calc(100%/5 - 2%);
-        margin: 1%;
+        // width: calc(100%/5 - 2%);
+        // margin: 1%;
+        padding: 10px 15px;
+        border: rgb(245, 245, 245);
+        border-radius: 30px;
+        background-color: rgb(245, 245, 245);
     }
 }
 
