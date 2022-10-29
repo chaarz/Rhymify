@@ -1,7 +1,23 @@
+@use "variables" as *;
+
 .wrapper{
     max-width: 1560px;
     width: 90%;
     margin: 0 auto;
+}
+
+button{
+    color: $secondaryColour;
+    background-color: $primaryColour;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover, &:focus{
+        color: $primaryColour;
+        background-color: $secondaryColour;
+        border: 2px solid $primaryColour;
+    }
 }
 
 img{

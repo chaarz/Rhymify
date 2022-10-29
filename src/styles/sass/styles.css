@@ -271,6 +271,20 @@ h2 {
   margin: 0 auto;
 }
 
+button {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover, button:focus {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -329,6 +343,8 @@ form {
 }
 form input {
   width: 100%;
+  padding: 0.5rem;
+  border: 2px solid black;
 }
 
 ul {
