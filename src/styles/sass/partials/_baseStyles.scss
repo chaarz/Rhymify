@@ -10,9 +10,7 @@ button{
     color: $secondaryColour;
     background-color: $accentColour;
     padding: 10px;
-    // border:  1px solid $tertiaryColour;
     border: none;
-    // border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
     &:hover, &:focus{
