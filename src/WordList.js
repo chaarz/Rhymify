@@ -7,7 +7,7 @@ const WordList = (props) => {
                 isSubmitted === true
                     ? words.length !== 0
                         ? <>
-                            <p>Words that rhyme with {currentWord} :</p>
+                            <p>Rhymes for {currentWord} :</p>
                             <ul>
                                 {words.map((w) => {
                                     return (

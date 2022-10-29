@@ -8,15 +8,17 @@
 
 button{
     color: $secondaryColour;
-    background-color: $primaryColour;
+    background-color: $accentColour;
     padding: 10px;
+    // border:  1px solid $tertiaryColour;
     border: none;
+    // border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
     &:hover, &:focus{
-        color: $primaryColour;
+        color: $accentColour;
         background-color: $secondaryColour;
-        border: 2px solid $primaryColour;
+        border: 1px solid $accentColour;
     }
 }
 

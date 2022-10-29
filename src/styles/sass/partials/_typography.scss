@@ -2,9 +2,11 @@
 
 html{
     font-size: 125%;
+    color: $primaryColour;
+    background-color: $secondaryColour;
 }
 
-body{
+body, input, button{
     font-size: $baseFontSize;
     font-family: 'Merriweather Sans', sans-serif;
 }
@@ -12,10 +14,25 @@ body{
 h1{
     color: $primaryColour;
     font-family: 'Passion One', cursive;
-    font-size: 4.5rem;
+    font-size: 5rem;
+    letter-spacing: 3px;
+    // line-height: 1.6;
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: $accentColour;
 }
+
+a{
+    color: $primaryColour;
+}
+
+input {
+    font-size: $baseFontSize;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 0.9rem;
+}
+

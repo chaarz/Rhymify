@@ -247,9 +247,11 @@ html {
 
 html {
   font-size: 125%;
+  color: black;
+  background-color: white;
 }
 
-body {
+body, input, button {
   font-size: 1rem;
   font-family: "Merriweather Sans", sans-serif;
 }
@@ -257,12 +259,25 @@ body {
 h1 {
   color: black;
   font-family: "Passion One", cursive;
-  font-size: 4.5rem;
+  font-size: 5rem;
+  letter-spacing: 3px;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  color: #4361EE;
+}
+
+a {
+  color: black;
+}
+
+input {
+  font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.9rem;
 }
 
 .wrapper {
@@ -273,16 +288,16 @@ h2 {
 
 button {
   color: white;
-  background-color: black;
+  background-color: #4361EE;
   padding: 10px;
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
 button:hover, button:focus {
-  color: black;
+  color: #4361EE;
   background-color: white;
-  border: 2px solid black;
+  border: 1px solid #4361EE;
 }
 
 img {
@@ -319,11 +334,6 @@ header {
   padding: 2rem 0 4rem 0;
 }
 
-body {
-  color: black;
-  background-color: white;
-}
-
 main {
   text-align: center;
 }
@@ -335,16 +345,19 @@ section {
 }
 
 form {
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 form input {
   width: 100%;
-  padding: 0.5rem;
-  border: 2px solid black;
+  padding: 10px 30px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 60px;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
 }
 
 ul {
@@ -354,6 +367,15 @@ ul {
 ul li {
   width: 18%;
   margin: 1%;
+}
+
+.accent {
+  color: #4361EE;
+}
+
+.accentBackground {
+  background-color: #4361EE;
+  color: white;
 }
 
 footer {

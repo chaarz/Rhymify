@@ -1,10 +1,5 @@
 @use "variables" as *;
 
-body{
-    color: $primaryColour;
-    background-color: $secondaryColour;
-}
-
 main{
     text-align: center;
 }
@@ -16,15 +11,18 @@ section{
 }
 
 form{
-    padding: 2rem 0;
+    padding-bottom: 2rem;
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     input{
         width: 100%;
-        padding: 0.5rem;
-        border: 2px solid $primaryColour;
+        padding: 10px 30px;
+        border: 1px solid rgb(220, 220, 220);
+        border-radius: 60px;
+        text-align: center;
+        background-color: rgb(245, 245, 245);
     }
 }
 
@@ -35,4 +33,13 @@ ul{
         width: calc(100%/5 - 2%);
         margin: 1%;
     }
+}
+
+.accent{
+    color: $accentColour;
+}
+
+.accentBackground{
+    background-color: $accentColour;
+    color: $secondaryColour;
 }
