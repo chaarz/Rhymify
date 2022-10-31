@@ -5,15 +5,17 @@ main{
 }
 
 section{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 form{
+    width: 70%;
     padding-bottom: 2rem;
     display:flex;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     input{
@@ -45,7 +47,3 @@ ul{
     color: $accentColour;
 }
 
-.accentBackground{
-    background-color: $accentColour;
-    color: $secondaryColour;
-}

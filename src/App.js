@@ -1,4 +1,4 @@
-import './styles/sass/styles.css';
+import './styles/sass/styles.scss';
 import { useState } from 'react'
 import WordList from './WordList';
 import Form from './Form';
@@ -40,7 +40,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className='App'>
       <header className='wrapper'>
         <h1>rhymify<span className="accent">.</span></h1>
         <h2>songwriting made easy</h2>
@@ -57,7 +57,7 @@ function App() {
       <footer>
         <p>Copyright © 2022 <a href="https://junocollege.com/">Juno College</a></p>
       </footer>
-    </>
+    </div>
   );
 }
 

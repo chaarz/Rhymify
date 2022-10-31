@@ -6,9 +6,11 @@
     margin: 0 auto;
 }
 
-// html, body{
-//     height: 100%;
-// }
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 button{
     color: $secondaryColour;
