@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+@media (max-width: 800px) {
+    /* Styles for tablet devices go within this breakpoint */
+    form{
+        width: 85%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for MOBILE devices go within this breakpoint */
+    form{
+        width: 100%;
+        flex-direction: column;
+    }
+}

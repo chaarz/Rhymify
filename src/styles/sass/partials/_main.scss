@@ -15,16 +15,15 @@ form{
     width: 70%;
     padding-bottom: 2rem;
     display:flex;
-    // flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     input{
         width: 100%;
         padding: 10px 30px;
-        border: 1px solid rgb(220, 220, 220);
+        border: 1px solid $quaternaryColour;
         border-radius: 60px;
         text-align: center;
-        background-color: rgb(245, 245, 245);
+        background-color: $tertiaryColour;
     }
 }
 
@@ -33,17 +32,11 @@ ul{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    margin-bottom: 2rem;
     li{
-        // width: calc(100%/5 - 2%);
-        // margin: 1%;
         padding: 10px 15px;
-        border: rgb(245, 245, 245);
         border-radius: 30px;
-        background-color: rgb(245, 245, 245);
+        background-color: $tertiaryColour;
     }
-}
-
-.accent{
-    color: $accentColour;
 }
 

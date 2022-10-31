@@ -16,19 +16,21 @@ h1{
     font-family: 'Passion One', cursive;
     font-size: clamp(4rem, 2vw, 5rem);
     letter-spacing: 2px;
-    // line-height: 1.6;
+    line-height: normal;
 }
 
 h2{
     font-size: clamp(1.7rem, 2vw, 2rem);
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
+    line-height: 1.6;
     color: $accentColour;
 }
 
 h3{
     font-family: 'Nunito Sans', sans-serif;
     font-size: clamp(1.3rem, 2vw, 1.5rem);
+    line-height: 1.6;
     padding-bottom: 1.5rem;
 }
 
