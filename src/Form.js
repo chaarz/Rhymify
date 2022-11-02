@@ -16,7 +16,7 @@ const Form = (props) => {
             setUserInput('')
         }}>
             <label htmlFor="searchBar" className="sr-only"> Enter a word below to find rhymes</label>
-            <input type="text" id="searchBar" placeholder="🎵  Search for rhymes..." onChange={(e) => { handleUserInput(e) }} value={userInput} />
+            <input type="text" id="searchBar" placeholder="🎵  Enter a word to find rhymes..." onChange={(e) => { handleUserInput(e) }} value={userInput} />
             <button>Submit</button>
         </form>
     )

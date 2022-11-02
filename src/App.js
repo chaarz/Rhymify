@@ -22,7 +22,7 @@ function App() {
     fetch(url)
       .then((res) => { return res.json() })
       .then((data) => {
-
+        console.log(data)
         const filteredWords = data.map((d) => {
           return {
             word: d.word
