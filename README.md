@@ -1,5 +1,5 @@
 # Rhymify
 
-View Live Site [here](https://rhymify-main.netlify.app).
+View Live Site [here](https://rhymify.netlify.app).
 
 
