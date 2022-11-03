@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+main{
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width: 70%;
+    padding-bottom: 2rem;
+    display:flex;
+    align-items: center;
+    gap: 1.5rem;
+    input{
+        width: 100%;
+        padding: 10px 30px;
+        border: 1px solid $quaternaryColour;
+        border-radius: 60px;
+        text-align: center;
+        background-color: $tertiaryColour;
+    }
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    li{
+        padding: 10px 15px;
+        border-radius: 30px;
+        background-color: $tertiaryColour;
+    }
+}
+

@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+.wrapper{
+    max-width: 1560px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.App{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    color: $secondaryColour;
+    background-color: $accentColour;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover, &:focus{
+        color: $accentColour;
+        background-color: $secondaryColour;
+        border: 1px solid $accentColour;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+.accent{
+    color: $accentColour;
+}
