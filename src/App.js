@@ -10,7 +10,7 @@ function App() {
   const [currentWord, setCurrentWord] = useState("")
 
 
-  // handleGetWords() will perform the network request:
+  // handleGetWords() will perform the network request to the Datamuse API:
   const handleGetWords = (e, userInput) => {
     e.preventDefault();
 
@@ -22,7 +22,6 @@ function App() {
     fetch(url)
       .then((res) => { return res.json() })
       .then((data) => {
-        console.log(data)
         const filteredWords = data.map((d) => {
           return {
             word: d.word

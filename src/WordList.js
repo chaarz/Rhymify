@@ -22,7 +22,6 @@ const WordList = (props) => {
             }
         </section>
     )
-
 }
 
 export default WordList;
